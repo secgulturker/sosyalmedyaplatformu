@@ -8,7 +8,7 @@ namespace VeriUygulamasi
     public class VeritabaniIslemleri
     {
         private MySqlConnection connection;
-        private string connectionString = "Server=server_adresi;Database=sosyalmedyaplatformu;Uid=kullanici_adı;Pwd=sifre;";
+        private string connectionString = "Server=localhost;Database=sosyalmedyaplatformu;Uid=root;Pwd=sifre;";
 
         public VeritabaniIslemleri()
         {
@@ -43,7 +43,7 @@ namespace VeriUygulamasi
             }
         }
 
-        // Kullanıcı Ekleme Metodu
+        
         public void KullaniciEkle(string id, string ad, string soyad, string tel, string mail)
         {
             try
@@ -69,7 +69,7 @@ namespace VeriUygulamasi
             }
         }
 
-        // Paylaşım Ekleme Metodu
+
         public void PaylasimEkle(string id, string icerik, string paylasimtarihisaati)
         {
             try
